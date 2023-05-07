@@ -1,0 +1,29 @@
+{
+  "canisters": {
+    "JaiShreeRam_backend": {
+      "main": "src/JaiShreeRam_backend/main.mo",
+      "type": "motoko"
+    },
+    "JaiShreeRam_frontend": {
+      "dependencies": [
+        "JaiShreeRam_backend"
+      ],
+      "frontend": {
+        "entrypoint": "src/JaiShreeRam_frontend/src/index.html"
+      },
+      "source": [
+        "src/JaiShreeRam_frontend/assets",
+        "dist/JaiShreeRam_frontend/"
+      ],
+      "type": "assets"
+    }
+  },
+  "defaults": {
+    "build": {
+      "args": "",
+      "packtool": ""
+    }
+  },
+  "output_env_file": ".env",
+  "version": 1
+}
